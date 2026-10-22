@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-22T13:40:05.906118+00:00",
+  "model": "qwen3.5:4b",
+  "learning": "verified_rule_memory_only_no_weight_updates",
+  "training": {
+    "tasks": 4,
+    "correct": 4,
+    "accuracy": 1.0,
+    "model_calls": 9,
+    "wall_seconds": 4.204
+  },
+  "baseline": {
+    "tasks": 4,
+    "correct": 3,
+    "accuracy": 0.75,
+    "model_calls": 4,
+    "wall_seconds": 20.007
+  },
+  "memory": {
+    "tasks": 4,
+    "correct": 4,
+    "accuracy": 1.0,
+    "model_calls": 4,
+    "wall_seconds": 2.276
+  },
+  "recursive": {
+    "tasks": 4,
+    "correct": 4,
+    "accuracy": 1.0,
+    "model_calls": 4,
+    "wall_seconds": 2.278
+  },
+  "gate": {
+    "candidates": [
+      "code_to_cloud",
+      "daily_to_local",
+      "math_to_cloud",
+      "translation_to_local"
+    ],
+    "val_tasks": 3,
+    "baseline_correct": 1,
+    "with_candidates_correct": 3,
+    "regressed": [],
+    "accepted": true,
+    "reason": "通过：严格提高且无退步"
+  },
+  "rules_in_bank": [
+    "code_to_cloud",
+    "daily_to_local",
+    "math_to_cloud",
+    "translation_to_local"
+  ],
+  "interpretation": "小样本结果仅描述本次运行；经验记忆和递归修正不保证提高准确率。"
+}

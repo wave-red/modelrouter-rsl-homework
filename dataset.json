@@ -1,0 +1,19 @@
+{
+  "train": [
+    {"question": "用 Python 写一个快速排序函数", "gold": "cloud"},
+    {"question": "把'请问'翻译成德语", "gold": "local"},
+    {"question": "你好呀，今天怎么样", "gold": "local"},
+    {"question": "证明勾股定理", "gold": "cloud"}
+  ],
+  "val": [
+    {"question": "写一个能爬取网页数据的 Python 脚本", "gold": "cloud"},
+    {"question": "什么是时钟树综合", "gold": "local"},
+    {"question": "计算 12345 乘以 6789", "gold": "cloud"}
+  ],
+  "holdout": [
+    {"question": "帮我调试一段总是段错误的 C 代码", "gold": "cloud"},
+    {"question": "你好，随便陪我聊聊吧", "gold": "local"},
+    {"question": "求矩阵的秩并给出计算过程", "gold": "cloud"},
+    {"question": "把'谢谢'译成日语", "gold": "local"}
+  ]
+}
